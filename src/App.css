@@ -1,47 +1,113 @@
-.Navbar{
-    
-    align-items: center;
-    display: flex;
-    justify-content:space-between;
-    padding: 12px 30px;
-    border-bottom: 1px solid rgb(185, 184, 184);   
-
-
+.Navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 30px;
+  border-bottom: 1px solid rgb(185, 184, 184);
 }
-.NavLeft{
-    
-    font-weight: 600;
-    font-size: 20px;
-    color: blue;
-
+.NavLeft {
+  font-weight: 600;
+  font-size: 20px;
+  color: blue;
 }
 
-.NavRight{
-    display: flex;
-
+.NavRight {
+  display: flex;
 }
 
-.NavImg{
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;    
-    object-fit: cover;
+.NavImg {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  object-fit: cover;
 }
 
-.lowerComponent{
-    display: flex;
-
+.lowerComponent {
+  display: flex;
 }
-.chatbox{
-    width: 30%;
-    height: 88vh;
-    /* border: 1px solid red; */
-    
-    border-right: 1px solid rgb(185, 184, 184);
-   
+.chatbox {
+  width: 30%;
+  height: 88vh;
+  overflow-y: scroll;
+
+  border-right: 1px solid rgb(185, 184, 184);
 }
 
-.search{
-    
+.search {
+  display: flex;
+  padding-top: 10px;
+  /* position: sticky; */
+}
+.icon {
+  width: 35px;
+  height: 35px;
+}
+.card1 {
+  display: flex;
+  /* flex-direction:   row; */
+  /* border: 1px solid rgb(185, 184, 184); */
+  padding-top: 10px;
+}
+.card1:hover {
+  cursor: pointer;
+  background-color: rgb(225, 230, 252);
+}
+
+.ProfilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin: 2px 10px;
+}
+.cardDetails {
+  margin-top: 7px;
+}
+
+.cardh5 {
+  line-height: 0.5;
+  color: rgb(26, 26, 215);
+}
+.cardp {
+  line-height: 0.9;
+  color: rgb(150, 133, 133);
+}
+
+.rightchatshow {
+  display: flex;
+  background-color: rgb(234, 237, 252);
+  justify-content: space-between;
+  padding: 8px;
+  width: 100%;
+}
+.rightimgpic {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+
+.righth6 {
+  color: rgb(26, 26, 215);
+  padding-top: 5px;
+}
+
+.TopRight {
+  width: 70%;
+  position: relative;
+}
+.RightMiddle {
+  /* height: calc(100%-200px); */
+  height: 74%;
+  overflow-y: scroll;
+  width: 100%;
+  background-color: rgb(239, 239, 239);
+}
+.RightLower {
+  /* background-color: rgb(201, 201, 201); */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
