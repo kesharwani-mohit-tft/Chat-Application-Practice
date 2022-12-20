@@ -30,7 +30,7 @@ const LeftComponent = () => {
     },
     {
       id: "4",
-      name: "Girl",
+      name: "Faizan",
       sms: "Hello Mohit",
       Img: "",
       Time: "08:10",

@@ -8,6 +8,7 @@ const Image = (props) => {
         src={props.url}
         alt="No Image"
         loading="lazy"
+        
       />
     </div>
   );

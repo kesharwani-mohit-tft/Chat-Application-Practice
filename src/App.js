@@ -1,19 +1,27 @@
 import "./App.css";
-import LeftComponent from "./components/LeftComponent";
-import Navbar from "./components/Navbar";
-import RightComponent from "./components/RightComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
+import {io}from 'socket.io-client'
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import { BrowserRouter , Routes, Route } from "react-router-dom"
+import Chatboard from "./components/Chatboard";
+
+const socket = io.connect("http://localhost:3000")
 
 function App() {
   return (
-    <div style={{ overflowY: "hidden" }}>
-      <Navbar />
-      <div className="lowerComponent">
-        <LeftComponent />
-        <RightComponent />
-      </div>
-    </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Login />} />
+        <Route path="/sign-in" element={<Login />} />
+        <Route path="/sign-up" element={<Signup />} /> 
+        <Route path="/chatboard" element={<Chatboard socket={socket}/>} />
+       </Routes>
+    </BrowserRouter>
+  </>
   );
 }
 
 export default App;
+
